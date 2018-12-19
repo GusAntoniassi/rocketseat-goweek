@@ -1,0 +1,24 @@
+{
+  "name": "mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "emulator": "emulator -avd Nexus_5X_API_27",
+    "run-android": "react-native run-android",
+    "dev-menu": "adb shell input keyevent KEYCODE_MENU",
+    "clean": "cd android && ./gradlew clean && cd .."
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.57.8"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.5",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
